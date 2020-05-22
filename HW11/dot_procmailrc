@@ -1,0 +1,73 @@
+## Homework Number: 11
+## Name: Yuan Liu
+## ECN Login: liu1827
+## Due Date: 04/23/2020
+
+SHELL=/bin/sh
+PATH=/usr/local/lib/mh:$PATH
+MAILDIR=$HOME/Mail
+LOGFILE=$HOME/Mail/logfile
+SENDMAIL=/usr/sbin/sendmail
+#VERBOSE=1
+VERBOSE=0
+EOL="
+"
+LOG="$EOL$EOL$EOL"
+LOG="New message log:$EOL"
+LOG=`perl GET_MESSAGE_INDEX`
+LOG="$EOL"
+
+
+
+## Recipe_1:
+##
+## junkMail 1 through junkMail 50 : they contain multiple entries in the “From:” header
+:0 :
+* ^From.*purdue\.edu
+my404Folder
+
+
+
+## Recipe_2:
+##
+## junkMail 51 through junkMail 63 : These messages can be trapped just on the basis of
+## the “Subject:” line in the email headers.
+:0 :
+* ^Subject.*sports
+/var/mail/ece404k3
+
+
+
+## Recipe_3:
+##
+## junkMail 64 through junkMail 66 : In your instructor’s spam filter, these messages were
+## trapped on basis of the content (email body) of the messages.
+
+:0 :
+* ^From.*(purdue\.edu[ ]|purdue\.edu>)
+!liu1827@purdue.edu
+
+
+
+## Recipe_4:
+##
+## junkMail 67 through junkMail 75 : You should trap these with a single recipe that
+## contains compound rules.
+##
+:0 B
+* < 10000
+* (\<v.codin\>|\<viicodin\>|\<vi.?c0[^a-z]din\>|\<vi.?codin.?\>|v[^a-z]codin|\<..?a1ium\>|\<val.?iu.?m\>|\<v@[^a-z]ium\>|\<vi0xx\>|va-[^a-z]ium|\<va1[ ]?[ ]?ium\>|\<valliuum\>|\<pr.ozac\>|\<vall.um\>|\<amb.jen\>|\<ui.tram\>|\<pro.zac\>|\<val..um\>|\<val...um\>|\<pr...zac\>|>mbie.n|\<v a l|\<va..um\>|\<v.alium\>|\<va.llum\>|\<va.ll.?um\>|\<va.lium\>|\<vali.um\>|\<przoac|\<levtira|\<zolotf|lorazpeam|prozaac)
+* (\<vi.gra\>|\<v1a[^a-z]gra\>|[^a-z]/iaa?gra\>|\<vii?aa?graa?|\<v[^a-z]agra\>|\<via[ ][ ]?gra\>|\<vi[ ]+graa?|\<v..agra\>|\<v.agg?ra\>|\<v.agr..a|>i.agra|g r a|v i a|\<vi..ra\>|\<v.iagra\>|\<v..agra\>|\<v..agra\>|\<viag.ra\>|\<vaigra|\<vair.a\>|\<vai..ra\>|\<vai.?gra\>)
+* (\<cialli.s\>|\<cia[^a-z]ii?s\>|\<cia[ ]?[ ]?1is\>|\<cia.?l.?is\>|\<cai[ ]+llis\>|\<xa.?naa?x\>|\<xan[ ]?ax\>|\<x[^a-z]an@x\>|\<meds\>|\<[0-9]o-?%|codeinn?e|\<c..alis\>|\<xa.nax\>|\<c.all.s\>|\<xan...ax\>|a.nax\>|i.alis\>|a l [it] s|c [it] a l|c / a|l / s|\<ci...lis\>|\<c.ialis\>|\<ci.alls\>|\<c..al.s\>|\<cial.is\>|\<cailis|\<caillis|\<xnaax|\<ca.ilis\>)
+* (http://|\<www\>)
+{
+  LOG="Email Trashed by Recipe_4$EOL"
+
+  :0 :
+  /dev/null
+}
+
+
+
+
+

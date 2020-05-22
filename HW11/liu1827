@@ -1,0 +1,66 @@
+## Homework Number: 11
+## Name: Yuan Liu
+## ECN Login: liu1827
+## Due Date: 04/23/2020
+
+SHELL=/bin/sh
+PATH=/usr/local/lib/mh:$PATH
+MAILDIR=$HOME/Mail
+LOGFILE=$HOME/Mail/logfile
+SENDMAIL=/usr/sbin/sendmail
+#VERBOSE=1
+VERBOSE=0
+EOL="
+"
+LOG="$EOL$EOL$EOL"
+LOG="New message log:$EOL"
+LOG=`perl GET_MESSAGE_INDEX`
+LOG="$EOL"
+
+
+
+## Recipe_1:
+##
+## junkMail 1 through junkMail 50 : they contain multiple entries in the “From:” header
+:0 H:
+* ^From: <.+>,
+my404Folder1
+
+
+
+## Recipe_2:
+##
+## junkMail 51 through junkMail 63 : These messages can be trapped just on the basis of
+## the “Subject:” line in the email headers.
+:0 H:
+* ^Subject: .*(medications)|(diploma)|(career)|(Diploma)|(imphotgence)|(plills)|(cheap)|(Professional)|(Partner)
+spamFolder2
+
+
+
+## Recipe_3:
+##
+## junkMail 64 through junkMail 66 : In your instructor’s spam filter, these messages were
+## trapped on basis of the content (email body) of the messages.
+:0 B:
+* (casino)|(company)
+spamFolder3
+
+
+
+## Recipe_4:
+##
+## junkMail 67 through junkMail 75 : You should trap these with a single recipe that
+## contains compound rules.
+##
+:0 HB:
+* ^Content-Type: text/plain
+* ^Content-Type: text/html
+* ^Content-Type: multipart/alternative
+spamFolder4
+
+
+
+
+
+

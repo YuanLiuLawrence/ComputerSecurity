@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="827c4b1d-caf3-4895-a505-3135d62e810f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YXkS4mrC2nQpu3lJ0yTYO5shRB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.rsa">
+    <configuration name="breakRSA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="HW6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/breakRSA.py" />
+      <option name="PARAMETERS" value="-c enc1.txt enc2.txt enc3.txt n_1_2_3.txt cracked.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rsa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="HW6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Yuan\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rsa.py" />
+      <option name="PARAMETERS" value="-d encrypted.txt p.txt q.txt decrypted.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.rsa" />
+      <item itemvalue="Python.breakRSA" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.rsa" />
+        <item itemvalue="Python.breakRSA" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="827c4b1d-caf3-4895-a505-3135d62e810f" name="Default Changelist" comment="" />
+      <created>1583096322412</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583096322412</updated>
+      <workItem from="1583096325689" duration="20390000" />
+      <workItem from="1583123738592" duration="2567000" />
+      <workItem from="1583257834931" duration="4935000" />
+      <workItem from="1583896909847" duration="303000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583896922771">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1583896922771" />
+    <state width="1493" height="114" key="GridCell.Tab.0.bottom" timestamp="1583269586542">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="114" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583269586542" />
+    <state width="2517" height="222" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1583126442638" />
+    <state width="1493" height="114" key="GridCell.Tab.0.center" timestamp="1583269586542">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="114" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583269586542" />
+    <state width="2517" height="222" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1583126442638" />
+    <state width="1493" height="114" key="GridCell.Tab.0.left" timestamp="1583269586542">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="114" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583269586542" />
+    <state width="2517" height="222" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1583126442638" />
+    <state width="1493" height="114" key="GridCell.Tab.0.right" timestamp="1583269586542">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="114" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583269586542" />
+    <state width="2517" height="222" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1583126442638" />
+    <state x="277" y="75" key="SettingsEditor" timestamp="1583096428356">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583096428356" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1583257837671">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1583257837671" />
+    <state x="775" y="427" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1583123738472" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HW6$breakRSA.coverage" NAME="breakRSA Coverage Results" MODIFIED="1583267868869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HW6$rsa.coverage" NAME="rsa Coverage Results" MODIFIED="1583269263196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HW6$Factorize.coverage" NAME="rsa Coverage Results" MODIFIED="1583121568468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
